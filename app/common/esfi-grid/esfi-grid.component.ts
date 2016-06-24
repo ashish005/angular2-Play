@@ -166,7 +166,7 @@ export class GridComponent {
     public onActionViewClick(data: any){
 
         this.PopupComponent.modal.open();
-        this.PopupComponent.modal.data = data;
+        //this.PopupComponent.modal.data = data;
         console.log("View action clicked", data);
     }
 

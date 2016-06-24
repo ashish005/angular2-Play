@@ -1,0 +1,109 @@
+<header>
+    <div class="logo pull-left">
+        <img class="img-fluid" src="./assets/img/logo-main.png">
+    </div>
+    <div class="roche-logo pull-right">
+        <img class="img-fluid" src="./assets/img/roche-logo.png">
+    </div>
+    <div class="clearfix"></div>
+  </header>
+
+<div class="collapse navbar-collapse nav-custom" id="bs-example-navbar-collapse-6"> 
+<div class="pull-left">
+ <nav class="">
+    <div class="navbar-header">
+      <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".js-navbar-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>      
+    </div>
+
+    <div class="collapse navbar-collapse js-navbar-collapse">
+      <ul class="nav navbar-nav">
+        <li class="dropdown mega-dropdown">
+          <a [routerLink]="['/management']" class="dropdown-toggle" data-toggle="dropdown">Employee Management <span class="glyphicon glyphicon-menu-down pull-right"></span></a>
+          <ul class="dropdown-menu mega-dropdown-menu">
+            <li><a [routerLink]="['/employee']">Employee</a>  </li>
+            <li><a [routerLink]="['/position']">Position</a></li>
+            <li><a [routerLink]="['/positionassignment']">PositionAssignment</a></li>
+            <li><a [routerLink]="['/employeeligibilty']">Employee Eligibilty</a></li>
+          </ul>
+        </li> 
+
+        <li class="dropdown mega-dropdown">
+          <a [routerLink]="['/management']" class="dropdown-toggle" data-toggle="dropdown">Sales Management <span class="glyphicon glyphicon-menu-down pull-right"></span></a>
+          <ul class="dropdown-menu mega-dropdown-menu">
+              <li><a [routerLink]="['/salesdataload']">Sales Data Load</a></li>
+              <li><a [routerLink]="['/sfedataload']">Sfe Data Load</a></li>
+              <li><a [routerLink]="['/quizdataload']">Quiz Data Load</a></li>
+          </ul>
+        </li> 
+
+        <li class="dropdown mega-dropdown">
+          <a [routerLink]="['/management']" class="dropdown-toggle" data-toggle="dropdown">Incentive Management <span class="glyphicon glyphicon-menu-down pull-right"></span></a>
+          <ul class="dropdown-menu mega-dropdown-menu">
+              <li><a [routerLink]="['/assignschemetoposition']">Assign Scheme to Position</a></li>
+              <li><a [routerLink]="['/incentivecalculation']">Incentive Calculation</a></li>
+          </ul>
+        </li> 
+        
+         <li><a [routerLink]="['/reports']">Reports</a></li>
+         <li><a [routerLink]="['/transactions']">Transactions</a></li>
+         <li><a [routerLink]="['/admin']">Admin</a></li>
+      </ul>
+
+    </div>
+    <!-- /.nav-collapse -->
+  </nav>
+</div>
+   <div class="nav-pref pull-right">
+        <ul class="nav">
+          <li role="presentation" class="dropdown"> 
+            <a id="drop4" href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> Welcome,  Admin <span class="caret"></span> </a> 
+
+            <ul id="menu1" class="dropdown-menu" aria-labelledby="drop4"> 
+              <li><a href="#">Preference</a></li> 
+              <li><a href="#">Setting</a></li>
+              <li role="separator" class="divider"></li> 
+              <li><a href="#">Logout</a></li>
+             </ul> 
+          </li>
+          </ul>
+      </div>
+</div>
+    <div class="main-container">
+    <div class="header-bar">
+      <div class="pull-left">
+        
+      </div>
+      <div class="pull-right upload-btn">
+         <button type="button" class="btn btn-sm btn-primary" data-toggle="modal" data-target="#myModal">Import App</button>
+         <!-- Modal -->
+          <div class="modal fade" id="myModal" role="dialog">
+            <div class="modal-dialog">
+            
+              <!-- Modal content-->
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  <h4 class="modal-title">Modal Header</h4>
+                </div>
+                <div class="modal-body">
+                  <p>Some text in the modal.</p>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+              
+            </div>
+          </div>
+
+
+      </div>
+      <div class="clearfix"></div>
+    </div>
+            <router-outlet></router-outlet>
+    </div> 

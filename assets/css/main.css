@@ -1,0 +1,19 @@
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Open Sans'), local('OpenSans'), url("//themes.googleusercontent.com/static/fonts/opensans/v6/u-WUoqrET9fUeobQW7jkRT8E0i7KZn-EPnyo3HZu7kw.woff") format('woff');
+}
+body{ background: #ebebeb ; font-family: 'Open Sans';}
+.main-container{ padding: 20px 2%; }
+.upload-btn{ margin: 8px; }
+.btn-primary{ background: #0066cc; -webkit-border-radius: 0px; -moz-border-radius: 0px; border-radius: 0px; }
+:hover.btn-primary{ background: #0157ad } 
+
+
+
+/* Theme grid changes */
+
+.ag-blue .ag-header{ background: #0066cc;   }
+.ag-blue .ag-body .ag-row-odd{ background: #eee }
+.ag-blue .ag-cell-no-focus{ border:none; border-top: 1px solid #ddd; }

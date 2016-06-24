@@ -1,0 +1,151 @@
+.sub-header{
+  /*background: #ccc url('http://fuse-angular-material.withinpixels.com/assets/images/backgrounds/header-bg.png') no-repeat center center fixed; */
+  background-color: #fff;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  padding:15px 21px;
+  border-bottom: 1px solid #dee5e7;
+  position: sticky;
+  top: 0px;
+  z-index:5;
+
+  .media{
+    margin-bottom:0px;
+
+    .list-inline-item{
+      margin-bottom: 10px;
+    }
+  }
+
+  .media, .text-truncate{
+    overflow: visible;
+  }
+
+  .page-title{
+    margin: 0px 0px 5px 0px;
+    font-size: 24px;
+    color: #2D323E;
+    font-weight: 300;
+
+  }
+
+  .page-title-desc{
+    color: #434a5b;
+
+  }
+
+  .breadcrumb{
+    padding: 0px;
+    margin: 0px;
+    font-size: 12px;
+    background: none;
+
+
+    > li + li::before{
+    color:#acaeb1;
+
+    }
+
+    a{
+      color: #acaeb1;
+
+    }
+    > .active{
+      color: #acaeb1;
+
+    }
+
+  }
+
+
+  .search-input, .daterange-input{
+  min-width:250px;
+  }
+
+
+  &.dark-bg-subheader{
+
+    background-color: $dark-bg-color;
+    .page-title{
+      color: #fff;
+    }
+    .page-title-desc{
+      color: #58666e;
+    }
+
+    .btn-secondary{
+      background-color: transparent;
+      border-color: #829098;
+      color: #829098;
+
+      &:hover, &:focus{
+        border-color: #fff;
+        color: #fff;
+      }
+
+    }
+
+
+  }
+
+
+
+
+
+  .media-right{
+    .btn{
+      padding-top: 0.475rem;
+      padding-bottom: 0.275rem;
+
+      .fa{
+        font-size: 12px;
+      }
+
+    }
+  }
+
+
+
+
+
+
+}
+
+@media (max-width:767px) {
+  
+  .dropdown{
+    &.dropdown-mobile{
+
+      .btn{
+        width: 100%;
+        text-align: left;
+        margin-bottom: 5px;
+
+        &:after{
+          float:right;
+          margin-top:9px;
+        }
+
+      }
+      .dropdown-menu{
+        padding:5px 10px;
+        width:100%;
+      }
+     }
+  }
+
+
+  .filter-drp-left{
+    right:-100px;
+    left:auto;
+  }
+
+  
+}
+
+
+
+
+

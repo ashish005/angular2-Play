@@ -1,0 +1,10 @@
+.overview-card {
+  .media-body {
+    > .lead {
+      margin-top: 15px;
+    }
+    > .m-b-0 {
+      display: none;
+    }
+  }
+}

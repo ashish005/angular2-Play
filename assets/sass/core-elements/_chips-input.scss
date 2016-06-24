@@ -1,0 +1,86 @@
+.md-chips {
+	position: relative;
+	padding: 0px 4px 0px 4px;
+}
+
+.chips-mini {
+	overflow: hidden;
+	display: inline-block;
+	background:rgb(224,224,224);
+	border-radius: 20px;
+	margin-right: 6px;
+	color:rgb(66,66,66);
+	margin-top:6px;
+}
+
+.chips-mini-title {
+	float: none;
+	display: inline-block;
+	/*font-family: 'RobotoRegular', Arial;*/
+	font-size: 13px;
+	padding: 4px 10px;
+	/*height: 16px;*/
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	vertical-align: top;
+	/*max-width: 80%;*/
+
+	a{
+		color: rgb(66,66,66);
+		margin-left: 4px;
+	}
+}
+
+.chipsInput {
+
+	border: 1px solid rgba(0,0,0,0);
+	max-width: 100%;
+}
+
+input.chipsInput:focus {
+	-moz-box-shadow: none !important;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+    outline: none;
+}
+
+input.chipsInput[type="text"]:disabled {
+    background: #fff !important;
+}
+
+.chips-input-field {
+}
+
+.chips-mini-item {
+	display: inline-block;
+	float:left;
+	max-width: 100%;
+}
+
+.chips-mini:hover {
+	background: #41a4c2;
+	cursor: pointer;
+}
+
+.chips-mini {
+	max-width: 100%;
+	position: relative;
+	vertical-align: top;
+}
+
+
+.chips-mini:active {
+	background: #41a4c2;
+}
+
+.chipsInput {
+	height: 20px;
+	width:70px;
+	float: left;
+	margin-top:10px;
+}
+
+.input-chips-elements {
+	overflow: hidden;
+}

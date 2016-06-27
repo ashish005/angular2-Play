@@ -17,13 +17,13 @@
   };
   // packages tells the System loader how to load when no filename and/or no extension
   var packages = {
-    'app':                        { main: 'main.js',  defaultExtension: 'js' },
-    'esfi-common':                { defaultExtension: 'js' },
-    'rxjs':                       { defaultExtension: 'js' },
-    'angular2-in-memory-web-api': { main: 'index.js', defaultExtension: 'js' },
-    'ag-grid-ng2': { defaultExtension: "js" },
-    'ag-grid': { defaultExtension: "js" },
-    'ng2-bs3-modal'              : { defaultExtension: "js" }
+    'app'                         : { main: 'main.js',  defaultExtension: 'js' },
+    'esfi-common'                 : { defaultExtension: 'js' },
+    'rxjs'                        : { defaultExtension: 'js' },
+    'angular2-in-memory-web-api'  : { main: 'index.js', defaultExtension: 'js' },
+    'ag-grid-ng2'                 : { defaultExtension: "js" },
+    'ag-grid'                     : { defaultExtension: "js" },
+    'ng2-bs3-modal'               : { defaultExtension: "js" }
   };
   var ngPackageNames = [
     'common',

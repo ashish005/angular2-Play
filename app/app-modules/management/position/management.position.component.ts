@@ -2,20 +2,19 @@
  * Created by wiznidev on 6/22/16.
  */
 import { Component , ViewChild } from '@angular/core';
-import { GridComponent }  from './../../.././common/app.common.components';
+import { ChartComponent }  from './../../.././common/app.common.components';
 import { PositionService } from './management.position.service'
 
 @Component({
-
     moduleId:module.id,
     templateUrl:'management.position.component.html',
-    directives: [GridComponent],
+    directives: [ChartComponent],
     providers: [PositionService] // Whatever service we are using we have to declare here
 })
 
 export class PositionComponent{
 
-    @ViewChild(GridComponent) GridComponent: GridComponent;
+    /*@ViewChild(GridComponent) GridComponent: GridComponent;
     columnDefs:[{}]
     constructor(private _positionservice:PositionService){
         this.columnDefs = [
@@ -39,6 +38,6 @@ export class PositionComponent{
         this._positionservice.getPosition().subscribe(res=>{
             self.GridComponent.updateGridData(res);
         });
-    }
+    }*/
 
 }

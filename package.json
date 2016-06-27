@@ -27,7 +27,9 @@
     "systemjs": "0.19.27",
     "zone.js": "^0.6.12",
     "ag-grid": "4.2.x",
-    "ag-grid-ng2": "4.2.x"
+    "ag-grid-ng2": "4.2.x",
+    "d3": "^3.5.15",
+    "nvd3": "^1.8.2"
   },
   "devDependencies": {
     "concurrently": "^2.0.0",
